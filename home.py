@@ -15,7 +15,7 @@ def logged():
         Nome = request.form['nome']
         Cognome = request.form['cognome']
         Data = request.form['data']
-        Nazioni = request.form['nazione']
+        Nazioni = request.form.get('nazione')
         Username = request.form['username']
         Lingue = request.form.getlist('lingue')
         Consenso = request.form.getlist('consenso')
